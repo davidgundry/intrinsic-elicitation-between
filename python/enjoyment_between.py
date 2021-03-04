@@ -7,8 +7,8 @@
 #
 # Overall, no significant change.
 #
-# TODO: Also participants played for different lengths of time/ vastly different
-# numbers of inputs. Can we control for this.
+# Note that participants played for different lengths of time/ different
+# numbers of inputs.
 
 import numpy as np
 import pandas as pd

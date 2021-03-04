@@ -1,14 +1,6 @@
 #
-# A script to analyse how the enjoyment changed between experiment 1 and 2. 
+# A script to analyse how the time spent in the experiment changed between experiment 1 and 2. 
 #
-# We're mainly interested in the game condition, as we made a bunch of game
-# design/interface/graphical improvements and want to see if they paid off.
-# However, there were no dramatic changes, so not expecting much.
-#
-# Overall, no significant change.
-#
-# TODO: Also participants played for different lengths of time/ vastly different
-# numbers of inputs. Can we control for this.
 
 import numpy as np
 import pandas as pd
