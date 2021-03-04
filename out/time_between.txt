@@ -1,0 +1,32 @@
+Analysing dataset duration 
+
+Comparing all data (both conditions combined)
+Hypothesis: Duration will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 310.26610416666665 sd 166.1517674650422
+Exp2 mean 549.417865497076 sd 56.04606184222919
+Mann-Whitney U test: p = 8.164458406845515e-37 ; U = 566.0 ; significant = True ; d = -2.191221650862149 
+
+
+Comparing game conditions
+Hypothesis: Duration will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 348.72132653061226 sd 96.71709332170549
+Exp2 mean 593.617393258427 sd 42.36188328358676
+Mann-Whitney U test: p = 7.391136154526772e-21 ; U = 91.0 ; significant = True ; d = -3.6659416372487565 
+
+
+Comparing control conditions
+Hypothesis: Duration will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 270.1744893617021 sd 209.84472783940618
+Exp2 mean 501.4452073170732 sd 12.907908077291134
+Mann-Whitney U test: p = 2.2613415143619826e-18 ; U = 156.0 ; significant = True ; d = -1.82517103104315 
+
+

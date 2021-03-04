@@ -1,9 +1,19 @@
 Analysing dataset combined 
 
+Comparing all data (both conditions combined)
+Hypothesis: Proportion of valid data (first 20, idealised) will be lower in experiment 2
+    than experiment 1. A two-tailed Mann-Whitney U test will be used to test
+    whether the distribution differs significantly between the two experiments
+     α = 0.05
+Exp1 mean 0.584375 sd 0.3534277637799927
+Exp2 mean 0.3685185185185185 sd 0.27082934682612675
+Mann-Whitney U test: p = 1.7531972748526173e-06 ; U = 4161.0 ; significant = True ; d = 0.7012943550971381 
+
+
 Comparing game conditions
 Hypothesis: Proportion of valid data (first 20, idealised) will be lower in experiment 2
     than experiment 1. A two-tailed Mann-Whitney U test will be used to test
-    whether the distribution of DV2 differs significantly between the two experiments
+    whether the distribution differs significantly between the two experiments
      α = 0.05
 Exp1 mean 0.4602040816326531 sd 0.3514819210376638
 Exp2 mean 0.30873015873015874 sd 0.24651435908902178
@@ -13,7 +23,7 @@ Mann-Whitney U test: p = 0.025829836900093404 ; U = 1212.0 ; significant = True 
 Comparing control conditions
 Hypothesis: Proportion of valid data (first 20, idealised) will be lower in experiment 2
     than experiment 1. A two-tailed Mann-Whitney U test will be used to test
-    whether the distribution of DV2 differs significantly between the two experiments
+    whether the distribution differs significantly between the two experiments
      α = 0.05
 Exp1 mean 0.7138297872340426 sd 0.30904870301064596
 Exp2 mean 0.42083333333333334 sd 0.28181379328291767

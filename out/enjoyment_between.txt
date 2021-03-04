@@ -1,0 +1,32 @@
+Analysing dataset combined 
+
+Comparing all data (both conditions combined)
+Hypothesis: Enjoyment will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 3.400297619047619 sd 0.926195872055205
+Exp2 mean 3.3493150684931505 sd 1.1202230126213355
+Mann-Whitney U test: p = 0.4199554040316553 ; U = 6900.0 ; significant = False ; d = 0.04866019578926891 
+
+
+Comparing game conditions
+Hypothesis: Enjoyment will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 3.7026239067055395 sd 0.8293288485428483
+Exp2 mean 3.7344064386317903 sd 1.0636577450611198
+Mann-Whitney U test: p = 0.27276028572194555 ; U = 1626.0 ; significant = False ; d = -0.032592276870698995 
+
+
+Comparing control conditions
+Hypothesis: Enjoyment will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
+     α = 0.05
+Exp1 mean 3.0851063829787235 sd 0.9246978808125033
+Exp2 mean 2.9847619047619047 sd 1.0543878672437947
+Mann-Whitney U test: p = 0.2829319044251003 ; U = 1653.0 ; significant = False ; d = 0.09968158065577983 
+
+

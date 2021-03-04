@@ -1,3 +1,15 @@
+#
+# A script to analyse how the enjoyment changed between experiment 1 and 2. 
+#
+# We're mainly interested in the game condition, as we made a bunch of game
+# design/interface/graphical improvements and want to see if they paid off.
+# However, there were no dramatic changes, so not expecting much.
+#
+# Overall, no significant change.
+#
+# TODO: Also participants played for different lengths of time/ vastly different
+# numbers of inputs. Can we control for this.
+
 import numpy as np
 import pandas as pd
 from scipy.stats import ttest_ind
@@ -13,23 +25,19 @@ import seaborn as sns
 sns.set(style="ticks", font_scale=1.5)
 import ptitprince as pt
 
-
-minimum_moves=20
 dataset = 'combined'
 print("Analysing dataset", dataset, "\n")
 df = pd.read_csv("data/"+dataset+".csv")
-df = df[df['total_moves']>=minimum_moves]
 df = df[df['bug'] != "bug"]
 
 
-
-def hypothesis_valid_proporition(exp1, exp2):
-    print("""Hypothesis: Proportion of valid data (first 20, idealised) will be lower in experiment 2
-    than experiment 1. A two-tailed Mann-Whitney U test will be used to test
-    whether the distribution differs significantly between the two experiments
+def hypothesis_enjoyment(exp1, exp2):
+    print("""Hypothesis: Enjoyment will be higher in experiment 2 than experiment 1.
+    A two-tailed Mann-Whitney U test will be used to test whether the distribution differs
+    significantly between the two experiments
      α = 0.05""")
-    c0 = exp1['proportion_of_valid_data_first20_idealised']
-    c1 = exp2['proportion_of_valid_data_first20_idealised']
+    c0 = exp1['imi_enjoyment']
+    c1 = exp2['imi_enjoyment']
     alpha = 0.05
     mwu = mannwhitneyu(c0, c1)
     n0 = len(c0)
@@ -43,8 +51,8 @@ def hypothesis_valid_proporition(exp1, exp2):
     print("Mann-Whitney U test: p =", mwu.pvalue, "; U =",mwu.statistic, "; significant =",(mwu.pvalue < alpha), "; d =",cohens_d, "\n\n")
 
 
-def valid_proportion_idealised_raincloud(df, condition):
-    dy="proportion_of_valid_data_first20_idealised"; dx="exp"; ort="v"; pal = sns.color_palette(n_colors=2)
+def enjoyment_raincloud(df, condition):
+    dy="imi_enjoyment"; dx="exp"; ort="v"; pal = sns.color_palette(n_colors=2)
     f, ax = plt.subplots(figsize=(7, 5))
     ax=pt.half_violinplot( x = dx, y = dy, data = df, palette = pal, bw = .2, cut = 0.,
                         scale = "area", width = .6, inner = None, orient = ort)
@@ -56,19 +64,25 @@ def valid_proportion_idealised_raincloud(df, condition):
                 saturation = 1, orient = ort)
     plt.xticks(plt.xticks()[0])
     ax.set_xlabel("")
-    ax.set_ylabel("Proportion of Valid Data (" + condition + " condition, first 20, idealised)")
-    plt.savefig('out/prop_valid_data_first20_'+condition+'_idealised_per_experiment_raincloud+'+dataset+'.pdf', bbox_inches='tight')
+    ax.set_ylabel("IMI Enjoyment (" + condition + " condition)")
+    plt.savefig('out/enjoyment_'+condition+'_per_experiment_raincloud+'+dataset+'.pdf', bbox_inches='tight')
+
+print("Comparing all data (both conditions combined)")
+exp1 = df[df['exp']==1]
+exp2 = df[df['exp']==2]
+enjoyment_raincloud(df,"both")
+hypothesis_enjoyment(exp1, exp2)
 
 print("Comparing game conditions")
 gamedf = df[df['version'] == "game"]
 game_exp1 = gamedf[gamedf['exp']==1]
 game_exp2 = gamedf[gamedf['exp']==2]
-valid_proportion_idealised_raincloud(gamedf,"game")
-hypothesis_valid_proporition(game_exp1, game_exp2)
+enjoyment_raincloud(gamedf,"game")
+hypothesis_enjoyment(game_exp1, game_exp2)
 
 print("Comparing control conditions")
 controldf = df[df['version'] == "control"]
 control_exp1 = controldf[controldf['exp']==1]
 control_exp2 = controldf[controldf['exp']==2]
-valid_proportion_idealised_raincloud(controldf,"control")
-hypothesis_valid_proporition(control_exp1, control_exp2)
+enjoyment_raincloud(controldf,"control")
+hypothesis_enjoyment(control_exp1, control_exp2)
