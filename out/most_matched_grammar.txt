@@ -1,0 +1,328 @@
+
+==================================
+Analysing Experiment  exp1_game
+==================================
+49 participants
+20 participants had no single best grammar
+
+Analysing Proportions
+----------------------------------
+Compare proportional usage of grammars within individuals. Rather than choosing
+one per user and dividing when equal best, each user contributes proportionally to all
+grammars they used, to the amount they used them. This answers the question 'What grammar
+is most commonly collected by the game if we control for number of user inputs?', or 'What
+grammar would be likely to decide on given a single input?' This is going to increase noise,
+as many grammars are rarely if ever most commonly used, but are used occasionally. These small
+proportions will add up having the effect of flattening the distirbution. This is exacerbated
+because moves (3 words long) will match multiple possible grammars (4 words long), so groups
+of grammars are going to be correlated. Even if one grammar was 'intended' it will pull
+up closely related grammars as well.
+Proportional counts: [2.788153594771242, 1.6203001375988986, 0.9034786721706225, 1.2461945304437563, 1.8477124183006535, 0.8623022015823874, 0.6273090815273477, 1.612719298245614, 1.0518210354317163, 0.6465858273133814, 1.8124376504987956, 3.1426481338149297, 3.1758804179566553, 1.4439413484692123, 0.6877622979016167, 1.0929975060199517, 1.2654712762297902, 0.9227554179566562, 1.593253353973168, 2.7611068111455106, 4.655402906776745, 3.3251924234606123, 4.091317294461644, 5.82325636394909]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 21.745525280821873 p = 0.5356555387633033 df = 23
+
+Analysing Best-Grammar Data
+------------------------------
+Where we've made a decision as to what each's user's grammar is,
+see how our judgements are distirbuted. Do we mostly decide users use x grammar?
+This way, the question is 'What grammars would we decide upon if we were to use the
+game as a measurement tool and how often would that decision match what we expect?'
+This way we can detect if one grammar is always/usually a little bit more common.
+If there is no such grammar, we would expect our 'best' grammar judement to be noisy
+and not reveal one clear winner. This makes sense if one 'intended' grammar can pull
+up other similar grammars because they are also compatable with the same (3-word) input.
+We expect the intended grammar to be always highest, but for correlated grammars to always
+be close behind.
+
+Grammar counts: [0.6666666666666666, 0.3333333333333333, 2.25, 0.5, 3.75, 1.75, 0.5, 0.5, 0.5, 0, 2.5, 1.8333333333333333, 0.8333333333333333, 0, 0, 0.5, 1.8333333333333333, 0.25, 0.5, 2.333333333333333, 6.833333333333333, 2.0, 4.166666666666667, 14.666666666666668]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 110.95918367346941 p = 1.7075570315048424e-13 df = 23
+
+Post-hoc Chi-Square test
+grammarA	grammarB	binB	ChiSq	corrected p-value	sig.
+23 	 0 	 fcns 	 12.78 	 0.005 	 **
+23 	 1 	 cfns 	 13.7 	 0.004 	 **
+23 	 2 	 nfcs 	 9.11 	 0.015 	 *
+23 	 3 	 fncs 	 13.23 	 0.005 	 **
+23 	 4 	 cnfs 	 6.47 	 0.033 	 *
+23 	 5 	 ncfs 	 10.16 	 0.014 	 *
+23 	 6 	 ncsf 	 13.23 	 0.005 	 **
+23 	 7 	 cnsf 	 13.23 	 0.005 	 **
+23 	 8 	 sncf 	 13.23 	 0.005 	 **
+23 	 9 	 nscf 	 14.67 	 0.003 	 **
+23 	 10 	 csnf 	 8.62 	 0.015 	 *
+23 	 11 	 scnf 	 9.98 	 0.014 	 *
+23 	 12 	 sfnc 	 12.35 	 0.005 	 **
+23 	 13 	 fsnc 	 14.67 	 0.003 	 **
+23 	 14 	 nsfc 	 14.67 	 0.003 	 **
+23 	 15 	 snfc 	 13.23 	 0.005 	 **
+23 	 16 	 fnsc 	 9.98 	 0.014 	 *
+23 	 17 	 nfsc 	 13.93 	 0.004 	 **
+23 	 18 	 cfsn 	 13.23 	 0.005 	 **
+23 	 19 	 fcsn 	 8.95 	 0.015 	 *
+23 	 20 	 scfn 	 2.85 	 0.091 	 n.s.
+23 	 21 	 csfn 	 9.63 	 0.014 	 *
+23 	 22 	 fscn 	 5.85 	 0.033 	 *
+
+==================================
+Analysing Experiment  exp2_game
+==================================
+89 participants
+20 participants had no single best grammar
+
+Analysing Proportions
+----------------------------------
+Compare proportional usage of grammars within individuals. Rather than choosing
+one per user and dividing when equal best, each user contributes proportionally to all
+grammars they used, to the amount they used them. This answers the question 'What grammar
+is most commonly collected by the game if we control for number of user inputs?', or 'What
+grammar would be likely to decide on given a single input?' This is going to increase noise,
+as many grammars are rarely if ever most commonly used, but are used occasionally. These small
+proportions will add up having the effect of flattening the distirbution. This is exacerbated
+because moves (3 words long) will match multiple possible grammars (4 words long), so groups
+of grammars are going to be correlated. Even if one grammar was 'intended' it will pull
+up closely related grammars as well.
+Proportional counts: [3.8375944269744102, 3.443350863675469, 2.3301924906300635, 2.059586714083708, 3.522895883913525, 2.759609129022293, 2.6815052556940198, 3.4447920105852514, 3.030276192775473, 2.3851380709604686, 3.377374781319525, 5.433547058563157, 4.350420872195658, 2.9455310974316538, 1.9557214325682388, 2.600859554383241, 1.7632195293501576, 2.033825305896513, 3.9131070806762374, 4.3073506439751785, 7.374169132683872, 5.317996855440245, 6.363522921218813, 7.768412695982813]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 17.232402767052317 p = 0.7976933550479901 df = 23
+
+Analysing Best-Grammar Data
+------------------------------
+Where we've made a decision as to what each's user's grammar is,
+see how our judgements are distirbuted. Do we mostly decide users use x grammar?
+This way, the question is 'What grammars would we decide upon if we were to use the
+game as a measurement tool and how often would that decision match what we expect?'
+This way we can detect if one grammar is always/usually a little bit more common.
+If there is no such grammar, we would expect our 'best' grammar judement to be noisy
+and not reveal one clear winner. This makes sense if one 'intended' grammar can pull
+up other similar grammars because they are also compatable with the same (3-word) input.
+We expect the intended grammar to be always highest, but for correlated grammars to always
+be close behind.
+
+Grammar counts: [1.0, 0.5, 2.666666666666667, 1.0, 3.0, 3.0, 4.0, 2.5, 1.0, 1.0, 3.1666666666666665, 6.333333333333333, 2.5, 2.0, 0.16666666666666666, 1.0, 0, 1.6666666666666667, 3.666666666666667, 1.5, 21.0, 1.1666666666666667, 6.833333333333333, 18.333333333333332]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 168.9775280898876 p = 3.3089071624550025e-24 df = 23
+
+Post-hoc Chi-Square test
+grammarA	grammarB	binB	ChiSq	corrected p-value	sig.
+23 	 0 	 fcns 	 15.54 	 0.002 	 **
+23 	 1 	 cfns 	 16.89 	 0.001 	 **
+23 	 2 	 nfcs 	 11.69 	 0.008 	 **
+23 	 3 	 fncs 	 15.54 	 0.002 	 **
+23 	 4 	 cnfs 	 11.02 	 0.009 	 **
+23 	 5 	 ncfs 	 11.02 	 0.009 	 **
+23 	 6 	 ncsf 	 9.2 	 0.015 	 *
+23 	 7 	 cnsf 	 12.03 	 0.007 	 **
+23 	 8 	 sncf 	 15.54 	 0.002 	 **
+23 	 9 	 nscf 	 15.54 	 0.002 	 **
+23 	 10 	 csnf 	 10.7 	 0.009 	 **
+23 	 11 	 scnf 	 5.84 	 0.047 	 *
+23 	 12 	 sfnc 	 12.03 	 0.007 	 **
+23 	 13 	 fsnc 	 13.12 	 0.005 	 **
+23 	 14 	 nsfc 	 17.84 	 0.001 	 ***
+23 	 15 	 snfc 	 15.54 	 0.002 	 **
+23 	 16 	 fnsc 	 18.33 	 0.001 	 ***
+23 	 17 	 nfsc 	 13.89 	 0.004 	 **
+23 	 18 	 cfsn 	 9.78 	 0.012 	 *
+23 	 19 	 fcsn 	 14.29 	 0.003 	 **
+23 	 21 	 csfn 	 15.11 	 0.003 	 **
+23 	 22 	 fscn 	 5.25 	 0.047 	 *
+20 	 0 	 fcns 	 18.18 	 0.001 	 ***
+20 	 1 	 cfns 	 19.55 	 0.0 	 ***
+20 	 2 	 nfcs 	 14.2 	 0.003 	 **
+20 	 3 	 fncs 	 18.18 	 0.001 	 ***
+20 	 4 	 cnfs 	 13.5 	 0.005 	 **
+20 	 5 	 ncfs 	 13.5 	 0.005 	 **
+20 	 6 	 ncsf 	 11.56 	 0.008 	 **
+20 	 7 	 cnsf 	 14.56 	 0.003 	 **
+20 	 8 	 sncf 	 18.18 	 0.001 	 ***
+20 	 9 	 nscf 	 18.18 	 0.001 	 ***
+20 	 10 	 csnf 	 13.16 	 0.005 	 **
+20 	 11 	 scnf 	 7.87 	 0.025 	 *
+20 	 12 	 sfnc 	 14.56 	 0.003 	 **
+20 	 13 	 fsnc 	 15.7 	 0.002 	 **
+20 	 14 	 nsfc 	 20.51 	 0.0 	 ***
+20 	 15 	 snfc 	 18.18 	 0.001 	 ***
+20 	 16 	 fnsc 	 21.0 	 0.0 	 ***
+20 	 17 	 nfsc 	 16.49 	 0.002 	 **
+20 	 18 	 cfsn 	 12.18 	 0.007 	 **
+20 	 19 	 fcsn 	 16.9 	 0.001 	 **
+20 	 21 	 csfn 	 17.75 	 0.001 	 ***
+20 	 22 	 fscn 	 7.21 	 0.029 	 *
+20 	 23 	 sfcn 	 0.18 	 0.671 	 n.s.
+
+==================================
+Analysing Experiment  exp1_tool
+==================================
+47 participants
+16 participants had no single best grammar
+
+Analysing Proportions
+----------------------------------
+Compare proportional usage of grammars within individuals. Rather than choosing
+one per user and dividing when equal best, each user contributes proportionally to all
+grammars they used, to the amount they used them. This answers the question 'What grammar
+is most commonly collected by the game if we control for number of user inputs?', or 'What
+grammar would be likely to decide on given a single input?' This is going to increase noise,
+as many grammars are rarely if ever most commonly used, but are used occasionally. These small
+proportions will add up having the effect of flattening the distirbution. This is exacerbated
+because moves (3 words long) will match multiple possible grammars (4 words long), so groups
+of grammars are going to be correlated. Even if one grammar was 'intended' it will pull
+up closely related grammars as well.
+Proportional counts: [3.6416070814290626, 1.1291267384146642, 0.631015037593985, 0.48815789473684207, 0.4067982456140351, 0.8353070175438597, 0.9070433436532508, 0.4785345717234262, 0.6098095617832461, 0.5634158926728586, 0.4120025442393863, 3.7275855637310755, 1.9743862776370509, 0.34031954887218047, 0.35912391272298394, 0.40551758183337133, 0.14453044375644997, 0.28738758661359287, 1.2119901469359673, 3.7244704899503653, 6.1616398951925255, 2.846056875700838, 7.0400535094420515, 8.674120238206923]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 66.59745053765963 p = 4.029492296928863e-06 df = 23
+
+Analysing Best-Grammar Data
+------------------------------
+Where we've made a decision as to what each's user's grammar is,
+see how our judgements are distirbuted. Do we mostly decide users use x grammar?
+This way, the question is 'What grammars would we decide upon if we were to use the
+game as a measurement tool and how often would that decision match what we expect?'
+This way we can detect if one grammar is always/usually a little bit more common.
+If there is no such grammar, we would expect our 'best' grammar judement to be noisy
+and not reveal one clear winner. This makes sense if one 'intended' grammar can pull
+up other similar grammars because they are also compatable with the same (3-word) input.
+We expect the intended grammar to be always highest, but for correlated grammars to always
+be close behind.
+
+Grammar counts: [0.25, 0, 0, 0, 0, 2.0, 2.0, 0, 1.0, 0, 0, 0.8333333333333333, 0, 0, 0, 0, 0, 0, 0, 1.0833333333333333, 9.333333333333332, 0, 6.083333333333333, 24.416666666666664]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 326.39007092198585 p = 2.0506086695295206e-55 df = 23
+
+Post-hoc Chi-Square test
+grammarA	grammarB	binB	ChiSq	corrected p-value	sig.
+23 	 0 	 fcns 	 23.68 	 0.0 	 ****
+23 	 1 	 cfns 	 24.42 	 0.0 	 ****
+23 	 2 	 nfcs 	 24.42 	 0.0 	 ****
+23 	 3 	 fncs 	 24.42 	 0.0 	 ****
+23 	 4 	 cnfs 	 24.42 	 0.0 	 ****
+23 	 5 	 ncfs 	 19.02 	 0.0 	 ****
+23 	 6 	 ncsf 	 19.02 	 0.0 	 ****
+23 	 7 	 cnsf 	 24.42 	 0.0 	 ****
+23 	 8 	 sncf 	 21.57 	 0.0 	 ****
+23 	 9 	 nscf 	 24.42 	 0.0 	 ****
+23 	 10 	 csnf 	 24.42 	 0.0 	 ****
+23 	 11 	 scnf 	 22.03 	 0.0 	 ****
+23 	 12 	 sfnc 	 24.42 	 0.0 	 ****
+23 	 13 	 fsnc 	 24.42 	 0.0 	 ****
+23 	 14 	 nsfc 	 24.42 	 0.0 	 ****
+23 	 15 	 snfc 	 24.42 	 0.0 	 ****
+23 	 16 	 fnsc 	 24.42 	 0.0 	 ****
+23 	 17 	 nfsc 	 24.42 	 0.0 	 ****
+23 	 18 	 cfsn 	 24.42 	 0.0 	 ****
+23 	 19 	 fcsn 	 21.35 	 0.0 	 ****
+23 	 20 	 scfn 	 6.74 	 0.009 	 **
+23 	 21 	 csfn 	 24.42 	 0.0 	 ****
+23 	 22 	 fscn 	 11.02 	 0.002 	 **
+
+==================================
+Analysing Experiment  exp2_tool
+==================================
+82 participants
+22 participants had no single best grammar
+
+Analysing Proportions
+----------------------------------
+Compare proportional usage of grammars within individuals. Rather than choosing
+one per user and dividing when equal best, each user contributes proportionally to all
+grammars they used, to the amount they used them. This answers the question 'What grammar
+is most commonly collected by the game if we control for number of user inputs?', or 'What
+grammar would be likely to decide on given a single input?' This is going to increase noise,
+as many grammars are rarely if ever most commonly used, but are used occasionally. These small
+proportions will add up having the effect of flattening the distirbution. This is exacerbated
+because moves (3 words long) will match multiple possible grammars (4 words long), so groups
+of grammars are going to be correlated. Even if one grammar was 'intended' it will pull
+up closely related grammars as well.
+Proportional counts: [5.274662992398074, 2.598080494837464, 1.8234716302394498, 1.585447509287936, 1.8369965532345438, 1.9196025599345887, 1.9579853519629526, 1.8753793452629088, 2.0554094057801224, 2.0406637246735397, 2.017409095013709, 4.409964529036062, 3.7276678338190186, 2.166330608350698, 1.944532794978401, 1.959278476084984, 1.6681258819985227, 1.9061500029500364, 3.2235692898338564, 5.900151787394465, 7.17746194932453, 4.784906515302177, 8.292707221416817, 9.85404444688514]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 36.48914294441984 p = 0.03674654962822083 df = 23
+
+Analysing Best-Grammar Data
+------------------------------
+Where we've made a decision as to what each's user's grammar is,
+see how our judgements are distirbuted. Do we mostly decide users use x grammar?
+This way, the question is 'What grammars would we decide upon if we were to use the
+game as a measurement tool and how often would that decision match what we expect?'
+This way we can detect if one grammar is always/usually a little bit more common.
+If there is no such grammar, we would expect our 'best' grammar judement to be noisy
+and not reveal one clear winner. This makes sense if one 'intended' grammar can pull
+up other similar grammars because they are also compatable with the same (3-word) input.
+We expect the intended grammar to be always highest, but for correlated grammars to always
+be close behind.
+
+Grammar counts: [0, 1.5, 0, 1.5, 2.5, 0.8333333333333333, 0.3333333333333333, 0.8333333333333333, 1.0, 3.1666666666666665, 0, 2.333333333333333, 1.5, 1.5, 1.3333333333333333, 0, 1.0, 0, 0.5, 2.333333333333333, 9.0, 2.5, 6.666666666666666, 41.666666666666664]
+
+One-way Chi-Square test to assess goodness of fit of distribution of detected
+grammar against null hypothesis that grammars equally likely.
+Hypothesis: grammars are not equally likely
+ChiSquared = 476.8780487804879 p = 2.2576428885886747e-86 df = 23
+
+Post-hoc Chi-Square test
+grammarA	grammarB	binB	ChiSq	corrected p-value	sig.
+23 	 0 	 fcns 	 41.67 	 0.0 	 ****
+23 	 1 	 cfns 	 37.38 	 0.0 	 ****
+23 	 2 	 nfcs 	 41.67 	 0.0 	 ****
+23 	 3 	 fncs 	 37.38 	 0.0 	 ****
+23 	 4 	 cnfs 	 34.73 	 0.0 	 ****
+23 	 5 	 ncfs 	 39.23 	 0.0 	 ****
+23 	 6 	 ncsf 	 40.68 	 0.0 	 ****
+23 	 7 	 cnsf 	 39.23 	 0.0 	 ****
+23 	 8 	 sncf 	 38.76 	 0.0 	 ****
+23 	 9 	 nscf 	 33.06 	 0.0 	 ****
+23 	 10 	 csnf 	 41.67 	 0.0 	 ****
+23 	 11 	 scnf 	 35.16 	 0.0 	 ****
+23 	 12 	 sfnc 	 37.38 	 0.0 	 ****
+23 	 13 	 fsnc 	 37.38 	 0.0 	 ****
+23 	 14 	 nsfc 	 37.83 	 0.0 	 ****
+23 	 15 	 snfc 	 41.67 	 0.0 	 ****
+23 	 16 	 fnsc 	 38.76 	 0.0 	 ****
+23 	 17 	 nfsc 	 41.67 	 0.0 	 ****
+23 	 18 	 cfsn 	 40.19 	 0.0 	 ****
+23 	 19 	 fcsn 	 35.16 	 0.0 	 ****
+23 	 21 	 csfn 	 34.73 	 0.0 	 ****
+23 	 22 	 fscn 	 25.34 	 0.0 	 ****
+20 	 0 	 fcns 	 9.0 	 0.059 	 n.s.
+20 	 1 	 cfns 	 5.36 	 0.206 	 n.s.
+20 	 2 	 nfcs 	 9.0 	 0.059 	 n.s.
+20 	 3 	 fncs 	 5.36 	 0.206 	 n.s.
+20 	 4 	 cnfs 	 3.67 	 0.286 	 n.s.
+20 	 5 	 ncfs 	 6.78 	 0.138 	 n.s.
+20 	 6 	 ncsf 	 8.05 	 0.077 	 n.s.
+20 	 7 	 cnsf 	 6.78 	 0.138 	 n.s.
+20 	 8 	 sncf 	 6.4 	 0.148 	 n.s.
+20 	 9 	 nscf 	 2.8 	 0.286 	 n.s.
+20 	 10 	 csnf 	 9.0 	 0.059 	 n.s.
+20 	 11 	 scnf 	 3.92 	 0.286 	 n.s.
+20 	 12 	 sfnc 	 5.36 	 0.206 	 n.s.
+20 	 13 	 fsnc 	 5.36 	 0.206 	 n.s.
+20 	 14 	 nsfc 	 5.69 	 0.188 	 n.s.
+20 	 15 	 snfc 	 9.0 	 0.059 	 n.s.
+20 	 16 	 fnsc 	 6.4 	 0.148 	 n.s.
+20 	 17 	 nfsc 	 9.0 	 0.059 	 n.s.
+20 	 18 	 cfsn 	 7.61 	 0.093 	 n.s.
+20 	 19 	 fcsn 	 3.92 	 0.286 	 n.s.
+20 	 21 	 csfn 	 3.67 	 0.286 	 n.s.
+20 	 22 	 fscn 	 0.35 	 0.556 	 n.s.
+20 	 23 	 sfcn 	 21.06 	 0.0 	 ***

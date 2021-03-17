@@ -27,8 +27,16 @@ In the project directory (for this experiment) run the following commands (on Li
 
     python python/time_between.py > out/time_between.txt
 
+    python python/most_matched_grammar.py > out/most_matched_grammar.txt
+
 
 A script to run a power analysis for a possible future experiment can be found in `r/`, which generated `out/power-anaysis.Rout`. You can generate this using the following command:
 
     R CMD BATCH --quiet r/power-analysis.r out/power-analysis.Rout
 
+//TODO: I want to decide what a user's grammar is. Currently I do it by seeing which is most common in a very simple way. Maybe there's a better way to do this using machine learning to decide what grammar a user has (and perhaps even give a confidence)
+
+* ordinal encoding
+* encode ordinal/categorical data into numbers
+* neural nets
+* principle component analysis?
