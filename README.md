@@ -29,6 +29,7 @@ In the project directory (for this experiment) run the following commands (on Li
 
     python python/most_matched_grammar.py > out/most_matched_grammar.txt
 
+    python python/popular_orders.py > out/popular_orders.txt
 
 A script to run a power analysis for a possible future experiment can be found in `r/`, which generated `out/power-anaysis.Rout`. You can generate this using the following command:
 
@@ -40,3 +41,10 @@ A script to run a power analysis for a possible future experiment can be found i
 * encode ordinal/categorical data into numbers
 * neural nets
 * principle component analysis?
+
+
+//TODO: Categorising participants into determined grammars is statistically a bit confusing. Would it be simpler to plot all inputs into categories depending on word order: sfn, cfn, scn, nfs, and so on, then classify those we consider grammatical. Then compare the "grammatical" categories against the various non-grammatical ones using Chi-Squared. This is closer to representing the real inputs, rather than having an additional layer of interpretation in the analysis.
+
+But what does it mean? Other than "grammatical inputs were more popular individually than any other individual type of input". Does this mean they are giving us valid data? Yes? More so than "Data is better than random"
+
+* Would need to control for inputs per user, e,g. use last 16 in each case. Can we just do proportions in each category?
