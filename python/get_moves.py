@@ -7,8 +7,8 @@ class Categories(enum.Enum):
     Color = 2
     Noun = 3
 
-""" Returns moves from file as a single array """
 def all_moves(filename, correct_form, coded):
+    """ Returns moves from file as a single array """
     rawData = _load_data(filename)
     moves = []
     for d in rawData:
@@ -27,8 +27,8 @@ def all_moves(filename, correct_form, coded):
                     moves.append(m)
     return moves
 
-""" Returns moves from file as an array of arrays of moves per user. """
-def moves_by_user(filename, condition, correct_form, coded, ):
+def moves_by_user(filename, condition, correct_form, coded):
+    """ Returns moves from file as an array of arrays of moves per user. """
     rawData = _load_data(filename)
     moves = []
     for d in rawData:
