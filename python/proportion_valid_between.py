@@ -62,9 +62,9 @@ def valid_proportion_idealised_raincloud(df, condition):
                 showcaps = True, boxprops = {'facecolor':'none', "zorder":10},\
                 showfliers=True, whiskerprops = {'linewidth':2, "zorder":10},\
                 saturation = 1, orient = ort)
-    plt.xticks(plt.xticks()[0])
+    plt.xticks(plt.xticks()[0], ["Experiment 1","Experiment 2"])
     ax.set_xlabel("")
-    ax.set_ylabel("Proportion of Valid Data (" + condition + " condition, first 20, idealised)")
+    ax.set_ylabel("Proportion of Valid Data")
     plt.savefig('out/prop_valid_data_first20_'+condition+'_idealised_per_experiment_raincloud+'+dataset+'.pdf', bbox_inches='tight')
 
 print("Comparing all data (both conditions combined)")
