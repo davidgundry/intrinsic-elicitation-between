@@ -1,6 +1,8 @@
 # Intrinsic Elicitation, Between-Experiment Analysis
 
-Following the two experiments, [intrinsic elicitiation 1](https://github.com/davidgundry/intrinsic-elicitation-1) and [intrinsic elicitation 2](https://github.com/davidgundry/intrinsic-elicitation-2), we want to do some further exploratory analysis to compare these datasets. This will be published in the same paper as the above two experiments. There is no further data collection, and the analysis is not preregistered.
+Following the two experiments, [intrinsic elicitiation 1](https://github.com/davidgundry/intrinsic-elicitation-1) [[OSF](https://osf.io/u2nze/)] and [intrinsic elicitation 2](https://github.com/davidgundry/intrinsic-elicitation-2), [[OSF](https://osf.io/4g9fh/)] we want to do some further exploratory analysis to compare these datasets. This will be published in the same paper as the above two experiments. There is no further data collection, and the analysis is not preregistered.
+
+This repository is also hosted on OSF at [https://osf.io/5tgc8/](https://osf.io/5tgc8/).
 
 We're mainly interested if the changes we made to the game between experiments (positioning buttons in columns, removing explicit instructions in control condition, graphical improvements, different levels, better block creation algorithm, etc.) had an effect on the proportion of valid data.
 
