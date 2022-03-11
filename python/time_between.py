@@ -39,7 +39,7 @@ def hypothesis_duration(exp1, exp2):
     c0 = exp1['duration']
     c1 = exp2['duration']
     alpha = 0.05
-    mwu = mannwhitneyu(c0, c1)
+    mwu = mannwhitneyu(c0, c1, alternative='two-sided')
     n0 = len(c0)
     n1 = len(c1)
     cond0 = (n0 - 1) * (stdev(c0) ** 2)

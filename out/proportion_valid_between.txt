@@ -7,7 +7,7 @@ Hypothesis: Proportion of valid data (first 20, idealised) will be lower in expe
      α = 0.05
 Exp1 mean 0.584375 sd 0.3534277637799927
 Exp2 mean 0.3685185185185185 sd 0.27082934682612675
-Mann-Whitney U test: p = 1.7531972748526173e-06 ; U = 4161.0 ; significant = True ; d = 0.7012943550971381 
+Mann-Whitney U test: p = 3.5063945497052155e-06 ; U = 8799.0 ; significant = True ; d = 0.7012943550971381 
 
 
 Comparing game conditions
@@ -17,7 +17,7 @@ Hypothesis: Proportion of valid data (first 20, idealised) will be lower in expe
      α = 0.05
 Exp1 mean 0.4602040816326531 sd 0.3514819210376638
 Exp2 mean 0.30873015873015874 sd 0.24651435908902178
-Mann-Whitney U test: p = 0.025829836900093404 ; U = 1212.0 ; significant = True ; d = 0.5101550187824632 
+Mann-Whitney U test: p = 0.05165967380018681 ; U = 1875.0 ; significant = False ; d = 0.5101550187824632 
 
 
 Comparing control conditions
@@ -27,6 +27,6 @@ Hypothesis: Proportion of valid data (first 20, idealised) will be lower in expe
      α = 0.05
 Exp1 mean 0.7138297872340426 sd 0.30904870301064596
 Exp2 mean 0.42083333333333334 sd 0.28181379328291767
-Mann-Whitney U test: p = 2.8567995134200843e-07 ; U = 773.0 ; significant = True ; d = 1.0005893861300805 
+Mann-Whitney U test: p = 5.713599026840169e-07 ; U = 2611.0 ; significant = True ; d = 1.0005893861300805 
 
 
